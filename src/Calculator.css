@@ -9,25 +9,6 @@
   left: 0px;
 }
 
-.digitButton {
-
-  text-align: center;
-  color: black;
-  background-color: white;
-  width: 50px;
-  height: 50px;
-  position: right;
-
-}
-
-.operationButton {
-  text-align: center;
-  color: white;
-  background-color: orange;
-  width: 50px;
-  height: 50px;
-}
-
 .display {
   height: 100px;
   text-align: right;
@@ -35,55 +16,22 @@
   background-color: black;
 }
 
-.topButton {
-  height: 50px;
-  width: 50px;
-  background: white;
-}
-
-.rightRow {
-  position: absolute;
-  top: 100px;
-  left: 150px;
-}
-
-.firstRow {
-  display: inline-flex;
-  position: absolute;
-  top: 100px;
-}
-
-
-.secondRow {
-  display:inline-flex;
-  position: absolute;
-  float: right;
-  top: 150px;
-}
-
-.thirdRow{
-  display: inline-flex;
-  position: absolute;
-  top: 200px;
+.container{
+  display: grid;
+  text-align: center;
+  font-weight:bold;
+  background-color: gray;
+  grid-template-columns: auto 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  grid-gap: 3px;
 
 }
 
-.fourthRow{
-  display: inline-flex;
-  position: absolute;
-  top: 250px;
-  border-top: black;
-  border-width: 10px;
-}
 
-.lastRow{
-  display: inline-flex;
-  position: absolute;
-  top: 300px;
+.rightButton {
+  background-color: orange;
+  color: white;
 }
 
 .doubleButton {
-  background-color: white;
-  text-align: left;
-  width: 100px;
 }
