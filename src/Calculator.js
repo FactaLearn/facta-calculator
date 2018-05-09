@@ -17,20 +17,31 @@ class Calculator extends Component {
         <div className="display">
           {displayValue}
         </div>
-        <div className="digitButton">0</div>
-        <div className="digitButton">1</div>
-        <div className="digitButton">2</div>
-        <div className="digitButton">3</div>
-        <div className="digitButton">4</div>
-        <div className="digitButton">5</div>
-        <div className="digitButton">6</div>
-        <div className="digitButton">7</div>
-        <div className="digitButton">8</div>
-        <div className="digitButton">9</div>
-        <div className="operationButton">+</div>
-        <div className="operationButton">-</div>
-        <div className="operationButton">\/</div>
-        <div className="operationButton">x</div>
+        <div className="functions">
+          <div className="function">AC</div>
+          <div className="function">±</div>
+          <div className="function">%</div>
+        </div>
+        <div className="operators">
+          <div className="operator">/</div>
+          <div className="operator">x</div>
+          <div className="operator">-</div>
+          <div className="operator">+</div>
+          <div className="operator lower-right-corner">=</div>
+        </div>
+        <div className="numbers">
+          <div className="number">7</div>
+          <div className="number">8</div>
+          <div className="number">9</div>
+          <div className="number">4</div>
+          <div className="number inner">5</div>
+          <div className="number">6</div>
+          <div className="number">1</div>
+          <div className="number">2</div>
+          <div className="number">3</div>
+          <div className="number double lower-left-corner">0</div>
+          <div className="number">,</div>
+        </div>
       </div>
     );
   }
