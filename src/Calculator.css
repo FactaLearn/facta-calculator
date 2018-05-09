@@ -1,9 +1,8 @@
 .calculator {
-  font-size: 2.em;
+  font-size: 30px;
   background-color: gray;
-  width: 200px;
-  height: 350px;
-  padding-left: 0px;
+  width: 205px;
+  height: 355px;
   position: relative;
   top: 0px;
   left: 0px;
@@ -17,21 +16,25 @@
 }
 
 .container{
-  display: grid;
-  text-align: center;
-  font-weight:bold;
-  background-color: gray;
-  grid-template-columns: auto 50px 50px 50px;
-  grid-template-rows: 50px 50px 50px 50px 50px;
-  grid-gap: 3px;
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.container > div {
+  text-align: center;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  border-width:0.5px;
+  border-style: solid;
+  border-color: black;
+}
 
-.rightButton {
+.fourthColumn{
   background-color: orange;
   color: white;
 }
 
 .doubleButton {
+  flex: 2;
 }
