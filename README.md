@@ -21,3 +21,7 @@ npm start
 ```
 npm test
 ```
+
+### Resultado dia 1
+
+![Ex. dia 1](/public/images/exercicio-dia-1.png?raw=true "Exercicio dia 1")
