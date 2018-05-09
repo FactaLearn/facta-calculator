@@ -22,7 +22,7 @@ class Calculator extends Component {
           <div className="firstColumn top">c</div>
           <div className="secondColumn top">+/-</div>
           <div className="thirdColumn top">%</div>
-          <div className="fourthColumn top">/</div>
+          <div className="fourthColumn top">÷</div>
 
 
 
