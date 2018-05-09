@@ -1,19 +1,39 @@
+.html,.body {
+  height: 100%;
+}
+
 .calculator {
   font-size: 30px;
-  background-color: gray;
-  width: 205px;
-  height: 355px;
+  font-family:serif;
+  background-color: rgb(242, 242, 242) ;
+  width: 204px;
+  height: 100%;
   position: relative;
   top: 0px;
   left: 0px;
+  box-shadow: 5px 5px 33px 0px #000000;
 }
 
 .display {
-  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 80px;
   text-align: right;
   color: white;
-  background-color: black;
+  background-color: DarkGrey;
+  border-radius: 5px 5px 0px 0px;
+
 }
+
+.number{
+  font-size: 50px;
+}
+
+.top{
+  background-color: rgb(230, 230, 230);
+}
+
 
 .container{
   display: flex;
@@ -21,8 +41,6 @@
 }
 
 .container > div {
-  text-align: center;
-  font-weight: bold;
   width: 50px;
   height: 50px;
   border-width:0.5px;
@@ -30,11 +48,31 @@
   border-color: black;
 }
 
+.firstColumn{
+  text-align: center;
+}
+
+.secondColumn{
+  text-align: center;
+}
+
+.thirdColumn{
+  text-align: center;
+}
+
 .fourthColumn{
+  text-align: center;
   background-color: orange;
   color: white;
 }
 
 .doubleButton {
+
+  border-radius: 0px 0px 0px 5px;
+  padding-left: 10px;
   flex: 2;
+}
+
+.equal{
+  border-radius: 0px 0px 5px 0px;
 }

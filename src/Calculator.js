@@ -15,14 +15,14 @@ class Calculator extends Component {
     return (
       <div className="calculator">
         <div className="display">
-          {displayValue}
+          <div className="number">{displayValue}</div>
         </div>
 
         <div className="container">
-          <div className="firstColumn">AC</div>
-          <div className="secondColumn">+/-</div>
-          <div className="thirdColumn">%</div>
-          <div className="fourthColumn">➗</div>
+          <div className="firstColumn top">c</div>
+          <div className="secondColumn top">+/-</div>
+          <div className="thirdColumn top">%</div>
+          <div className="fourthColumn top">/</div>
 
 
 
@@ -44,7 +44,7 @@ class Calculator extends Component {
 
           <div className="doubleButton">0</div>
           <div className="thirdColumn">,</div>
-          <div className="fourthColumn">=</div>
+          <div className="fourthColumn equal">=</div>
         </div>
 
 
