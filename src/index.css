@@ -1,6 +1,5 @@
 .container{
     border:1px ridge RGB(131,131,131);
-    border-width:1px;
     border-width:0.4px;
     border-radius: 5px;
     font-family: 'Josefin Slab', serif;
@@ -8,11 +7,13 @@
     text-align: center;
 }
 .header{
+    display: grid;
+    justify-items: end;
+    align-items: end;
     padding-right:8px;
     font-weight: lighter;
     font-size: 55px;
-    border:1px ridge RGB(131,131,131);
-    border-width:0.4px;
+    border:0.4px ridge RGB(131,131,131);
     border-top-right-radius: 7px;
     border-top-left-radius: 7px;
     color:white;
@@ -22,16 +23,14 @@
     padding-top:5px;
     font-weight: bold;
     font-size:28px;
-    border:1px ridge RGB(131,131,131);
-    border-width:0.4px;
+    border:0.4px ridge RGB(131,131,131);
     background-color: RGB(220,220,220);
 }
 .footer{
     padding-left: 15px;
     padding-top:5px;
     font-weight: bold;
-    border:1px ridge RGB(131,131,131);
-    border-width:0.4px;
+    border:0.4px ridge RGB(131,131,131);
     background-color: RGB(220,220,220);
     text-align: left;
     font-size:30px;
@@ -39,16 +38,14 @@
 .ordinary_top{
     padding-top:7px;
     font-weight: bold;
-    border:1px ridge RGB(131,131,131);
-    border-width:0.4px;
+    border:0.4px ridge RGB(131,131,131);
     background-color: RGB(208,208,208);
 }
 .ordinary_right{
     padding-top:7px;
     font-weight: bold;
     background-color: RGB(246,135,44);
-    border:1px ridge RGB(131,131,131);
-    border-width:0.4px;
+    border:0.4px ridge RGB(131,131,131);
     color:white;
     width:55px;
 }

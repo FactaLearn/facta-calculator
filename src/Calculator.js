@@ -22,7 +22,7 @@ class Calculator extends Component {
         <div className="ordinary">7</div>
         <div className="ordinary">8</div>
         <div className="ordinary">9</div>
-        <div className="ordinary_right">X</div>
+        <div className="ordinary_right" style={{fontSize: 30}}>&times;</div>
         <div className="ordinary">4</div>
         <div className="ordinary">5</div>
         <div className="ordinary">6</div>
