@@ -4,49 +4,57 @@
 }
 
 .calculator {
-  display: grid;
+  display: flex;
+
+  /* calculator tem 2 children: buttons e operators */
+  /* column faz a orientação ficar vertical */
+  flex-direction: column;
+
+  /* largura da calculadora no macbook 13in */
   width: 230px;
-  grid-template: 80px repeat(5, 48px) / repeat(4, 1fr);
+
+  /* borda arredondada */
   border-radius: var(--border-radius);
+
+  /* sombra em baixo e aos lados */
   box-shadow: 0px 12px 31px 2px #BFC1C1;
+
+  /* fonte parecida com helvetica */
   font-family: 'Roboto', sans-serif;
 }
 
 .display {
-  display: grid;
-  grid-column: -1 / 1;
   background-color: #999;
   color: white;
   text-align: right;
   font-size: 3em;
   border-radius: var(--border-radius) var(--border-radius) 0px 0px;
-  align-items: end;
-  justify-items: end;
   padding-right: 10px;
   font-weight: 100;
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
-.functions {
-  display: grid;
-  grid-column: 1 / 4;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: #d6d6d6;
-  font-size: 1.2em;
+.buttons {
+  display: flex;
+  flex-direction: row;
 }
 
-.functions > .function {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  border-left: 0.5px solid #8e8e8e;
-  border-bottom: 0.5px solid #8e8e8e;
+.buttons > .left-pane {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.buttons > .operators {
+  flex: 1;
 }
 
 .operators {
-  display: grid;
-  grid-row: 2 / 7;
-  grid-column: 4;
-  grid-template-rows: repeat(5, 1fr);
+  display: flex;
+  flex-direction: column;
   background-color: #e99748;
   color: white;
   border-bottom-right-radius: var(--border-radius);
@@ -54,35 +62,63 @@
 }
 
 .operators > .operator {
-  display: grid;
-  justify-content: center;
-  align-items: center;
+  display: flex;
   border-left: 0.5px solid #8e8e8e;
   border-bottom: 0.5px solid #8e8e8e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.functions {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  background-color: #d6d6d6;
+  font-size: 1.2em;
+
+  /* gambiarra... */
+  height: 90px;
+}
+
+.functions > .function {
+  flex: 1;
+  border-left: 0.5px solid #8e8e8e;
+  border-bottom: 0.5px solid #8e8e8e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .numbers {
-  display: grid;
-  grid-row: 3 / 7;
-  grid-column: 1 / 4;
-  grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  flex: 4;
   background-color: #e0e0e0;
   border-bottom-left-radius: var(--border-radius);
 }
 
 .numbers > .number {
+  flex-basis: 33%;
+  flex-grow: 1;
+  flex-shrink: 0;
   border-left: 0.5px solid #8e8e8e;
   border-bottom: 0.5px solid #8e8e8e;
-  display: grid;
-  align-items: center;
-  justify-items: center;
   font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .double {
-  grid-column: 1 / span 2;
-  justify-items: start !important;
-  padding-left: 25px;
+  /* gambiarra... */
+  flex: 9999 !important;
+  justify-content: flex-start !important;
+}
+
+.double > span {
+  margin-left: 22% !important;
 }
 
 .lower-left-corner {
