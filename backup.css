@@ -1,0 +1,38 @@
+.calculator {
+    font-size: 3em;
+  }
+  table{
+    border-collapse:collapse
+  }
+  td,th{
+    text-align: center;
+    border:1px solid RGB(131,131,131);
+    font-size: 18px;
+    font-family: 'Josefin Slab', serif;
+    padding: 16px;
+    width: 28px;
+  }
+  th{
+    background-color: RGB(152,152,152);
+    color:white;
+    font-weight: lighter;
+  }
+  td{
+    font-weight: bold;
+    background-color: RGB(220,220,220);
+  }
+  .right{
+    font-size:25px;
+    color:white;
+    background-color: RGB(246,135,44);
+  }
+  .left{
+    text-align: left;
+    font-size: 25px;
+  }
+  .top{
+    background-color: RGB(208,208,208);
+  }
+  .bold{
+    font-size: 25px;
+  }

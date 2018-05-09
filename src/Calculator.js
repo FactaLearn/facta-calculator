@@ -13,42 +13,27 @@ class Calculator extends Component {
     const { displayValue } = this.state;
 
     return (
-      <div>
-      <table>
-            <tr>
-              <th colspan="4" className="calculator" style ={{textAlign: "right"}}> {displayValue}</th>
-            </tr>
-            <tr>
-                <td className="top">AC</td>
-                <td className="top">+ -</td>
-                <td className="top">%</td>
-                <td className="right">/</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-                <td className="right">X</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td className="right">-</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td className="right">+</td>
-            </tr>
-            <tr>
-                <td colspan="2" className="left">0</td>
-                <td>,</td>
-                <td className="right">=</td>
-            </tr>
-        </table>
-       
+      <div className="container">
+        <div className="header" style={{textAlign: "right"}}>0</div>
+        <div className="ordinary_top">AC</div>
+        <div className="ordinary_top">+ -</div>
+        <div className="ordinary_top">%</div>
+        <div className="ordinary_right">/</div>
+        <div className="ordinary">7</div>
+        <div className="ordinary">8</div>
+        <div className="ordinary">9</div>
+        <div className="ordinary_right">X</div>
+        <div className="ordinary">4</div>
+        <div className="ordinary">5</div>
+        <div className="ordinary">6</div>
+        <div className="ordinary_right">-</div>
+        <div className="ordinary">1</div>
+        <div className="ordinary">2</div>
+        <div className="ordinary">3</div>
+        <div className="ordinary_right">+</div>
+        <div className="footer">0</div>
+        <div className="ordinary">,</div>
+        <div className="ordinary_right">=</div>
       </div>
     );
   }
