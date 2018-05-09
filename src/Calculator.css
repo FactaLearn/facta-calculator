@@ -4,85 +4,90 @@
 }
 
 .calculator {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   width: 230px;
-  grid-template: 80px repeat(5, 48px) / repeat(4, 1fr);
+  height: 320px;
   border-radius: var(--border-radius);
   box-shadow: 0px 12px 31px 2px #BFC1C1;
   font-family: 'Roboto', sans-serif;
 }
 
 .display {
-  display: grid;
-  grid-column: -1 / 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   background-color: #999;
   color: white;
-  text-align: right;
   font-size: 3em;
   border-radius: var(--border-radius) var(--border-radius) 0px 0px;
-  align-items: end;
-  justify-items: end;
   padding-right: 10px;
   font-weight: 100;
+  height: 80px;
 }
 
 .functions {
-  display: grid;
-  grid-column: 1 / 4;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   background-color: #d6d6d6;
   font-size: 1.2em;
 }
 
 .functions > .function {
-  display: grid;
-  align-items: center;
-  justify-items: center;
+  display:flex;
+  flex: 1;
+  justify-content: center;
+  padding-top: 10px;
   border-left: 0.5px solid #8e8e8e;
   border-bottom: 0.5px solid #8e8e8e;
 }
-
-.operators {
-  display: grid;
-  grid-row: 2 / 7;
-  grid-column: 4;
-  grid-template-rows: repeat(5, 1fr);
+.operator{
+  display:flex;
+  flex: 1;
+  justify-content: center;
+  padding-top: 7px;
   background-color: #e99748;
   color: white;
-  border-bottom-right-radius: var(--border-radius);
   font-size: 1.5em;
+  border-left: 0.5px solid #8e8e8e;
+  border-bottom: 0.5px solid #8e8e8e;
 }
 
-.operators > .operator {
-  display: grid;
+.number {
+  display:flex;
+  flex: 1;
   justify-content: center;
-  align-items: center;
+  padding-top: 8px;
   border-left: 0.5px solid #8e8e8e;
   border-bottom: 0.5px solid #8e8e8e;
-}
-
-.numbers {
-  display: grid;
-  grid-row: 3 / 7;
-  grid-column: 1 / 4;
-  grid-template: repeat(4, 1fr) / repeat(3, 1fr);
-  background-color: #e0e0e0;
-  border-bottom-left-radius: var(--border-radius);
-}
-
-.numbers > .number {
-  border-left: 0.5px solid #8e8e8e;
-  border-bottom: 0.5px solid #8e8e8e;
-  display: grid;
-  align-items: center;
-  justify-items: center;
+  background-color: #d6d6d6;
   font-size: 1.5em;
 }
-
+.first{
+  display: flex;
+  flex: 1;
+}
+.second{
+  display: flex;
+  flex: 1;
+}
+.third{
+  display: flex;
+  flex: 1;
+}
 .double {
-  grid-column: 1 / span 2;
-  justify-items: start !important;
-  padding-left: 25px;
+  display:flex;
+  font-size:26px;
+  flex:2;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+.double > span{
+  margin-left: 20px;
+}
+.everything{
+  display: flex;
+  flex: 1;
 }
 
 .lower-left-corner {
